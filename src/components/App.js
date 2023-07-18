@@ -7,11 +7,11 @@ const App = () => {
 
   const[inputValue,setInputValue]=useState('');
   return (
-    <div style={{backgroundColor:'#a2ec0b',padding:'1rem'}}>
+    <div style={{backgroundColor:'#a2ec0b',padding:'1rem'}} className="parent">
         {/* Do not remove the main div */}
         <h1>Parent Component</h1>
       <p>{inputValue}</p>
-      <Child setValue={setInputValue}/>
+      <Child setValue={setInputValue} value={inputValue}/>
     </div>
   )
 }
